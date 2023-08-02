@@ -40,13 +40,12 @@ var dwVisParams = {
 // Clip the composite and add it to the Map.
 Map.addLayer(dwComposite.clip(geometry), dwVisParams, 'Classified Composite');
 
-// export as geotif for gis. Layer will appear in Task panel to right. Run this layer to export to your Google Drive.
-// Ensure to choose a suitable CRS when exporting this layer e.g. EPSG:4326.
+// export as geotif for gis
 Export.image.toDrive({
-  image: ndvi.clip(geometry), // clip the NDVI layer to geometry before export
-  description: '20220701_20220831_ls8_ndvi_500', // pick a suitable name
+  image: dwComposite.clip(geometry), // clip layer to geometry
+  description: '20220101_20220131_dw_composite_raw_500m',
   region: geometry,
-  scale: 500, // pixel width to export the image. Landsat-8 multispectral resolution is 30 m
-  //so here we downsample the layer to match the InSAR data (500m)
+  scale: 500, // Pixel width at which to export the layer. Sentinel-2 multispectral resolution is 30 m
+  // so here we downsample the layer to match the InSAR data (500m)
   maxPixels: 4e10 // max number of pixels allowed in the exported image to limit size of exported image
 });
