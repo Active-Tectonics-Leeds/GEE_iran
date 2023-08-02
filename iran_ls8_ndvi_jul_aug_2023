@@ -1,0 +1,36 @@
+// Define a polygon of interest (Iran)
+var geometry = ee.Geometry.Rectangle([43.83,24.7,63.58,39.88]);
+
+var dataset = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')
+  .filterDate('2022-07-01', '2022-08-31')
+  .filterBounds(geometry)
+  .filterMetadata('CLOUD_COVER','less_than',10)
+var trueColor432 = dataset.select(['B4', 'B3', 'B2']);
+var trueColor432Vis = {
+  min: 0.0,
+  max: 0.4,
+};
+Map.centerObject(geometry, 5);
+Map.addLayer(trueColor432, trueColor432Vis, 'True Color (432)');
+
+// Reduce the ImageCollection into a mosaic image
+var image = dataset.median();
+print(image, 'ls8 mosaic');
+
+// Calculate NDVI (Normalized Difference Vegetation Index) 
+// NDVI = (NIR-Red)/(NIR+Red), To get the bands information (Click on the ls8 ImageCollection)
+var ndvi = image.normalizedDifference(['B5', 'B4']);
+Map.addLayer(ndvi, {min:0, max:1, palette:['000000','00ff00']}, 'NDVI');
+
+// You can also do the same calculation in other ways
+var ndvi1 = image.expression('(NIR-RED)/(NIR+RED)', {'NIR':image.select('B5'), 'RED': image.select('B4')});
+Map.addLayer(ndvi1, {min:0, max:1, palette:['000000','00ff00']}, 'NDVI (expression)', false);
+
+// export as geotif for gis
+Export.image.toDrive({
+  image: ndvi.clip(geometry),
+  description: '20220701_20220831_ls8_ndvi_500',
+  region: geometry,
+  scale: 500,
+  maxPixels: 4e10
+});
