@@ -2,9 +2,9 @@
 
 If you have never used JavaScript before, GEE code can look a bit alien. Here is a quick guide on what's going on:
 
-1. To set a variable of any type (point, image collection, chart) simply type **var** followed by your command
+1. To set a variable of any type (point, image collection, chart) simply type `var` followed by your command
    
-   e.g. to create **dataset** of Landsat-8 Top of Atmosphere images:\
+   e.g. to create `dataset` of Landsat-8 Top of Atmosphere images:\
    `var dataset = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')`
 
    e.g. to set a geometry that is a rectangle in lat lon coordinates that covers Iran\
@@ -20,15 +20,15 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    and what functions can be applied to them (e.g. `ee.Array.argmax`)\
    ![image](https://github.com/eejap/GEE_iran/assets/93524485/768d845a-5ce7-4ef1-b367-adf716c3f51b)
 ***
-3. To control what is seen on the Map below the code editor, call **Map** object:
+3. To control what is seen on the Map below the code editor, call `Map` object:
    
-   e.g. to centre the map on your variable **geometry** with zoom level 5:\
+   e.g. to centre the map on your variable `geometry` with zoom level 5:\
    `Map.centerObject(geometry, 5)`
 
-   e.g. to add a layer that you have created called *trueColor432* to your map with visualisation settings **trueColor432Vis**:\
+   e.g. to add a layer that you have created called *trueColor432* to your map with visualisation settings `trueColor432Vis`:\
    `Map.addLayer(trueColor432, trueColor432Vis, 'True Color (432)')`
 ***
-4. To create a function to apply to one or a collection of images, use **function**:
+4. To create a function to apply to one or a collection of images, use `function`:
    
    e.g. create a function addNDVI to calculate Normalised Vegetation Difference Index from image bands 4 and 5
 
@@ -47,7 +47,7 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
 ***
 6. There are loads of datasets you would never think of available through GEE. Have a brows of the Earth Engine Data Catalog: \
    https://developers.google.com/earth-engine/datasets/catalog \
-   e.g. search temperature and explore the very long list of associated datasets \
+   e.g. search temperature and explore the very long list of associated datasets
 
    Each dataset comes with example JavaScript code, making it easy to edit the code to suit your needs: \
     ![image](https://github.com/eejap/GEE_iran/assets/93524485/72d17533-74a2-449e-a88a-2990261c7cb8)
