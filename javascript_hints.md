@@ -50,5 +50,6 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    e.g. search temperature and explore the very long list of associated datasets \
 
    Each dataset comes with example JavaScript code, making it easy to edit the code to suit your needs: \
-   ![image](https://github.com/eejap/GEE_iran/assets/93524485/e28efe41-2127-4794-982b-d340e0f9abf4)
+    ![image](https://github.com/eejap/GEE_iran/assets/93524485/72d17533-74a2-449e-a88a-2990261c7cb8)
+
 
