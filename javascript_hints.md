@@ -5,10 +5,10 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
 1. To set a variable of any type (point, image collection, chart) simply type **var** followed by your command
    
    e.g. to create **dataset** of Landsat-8 Top of Atmosphere images:\
-       var dataset = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')
+   `var dataset = ee.ImageCollection('LANDSAT/LC08/C02/T1_TOA')`
 
    e.g. to set a geometry that is a rectangle in lat lon coordinates that covers Iran\
-       var geometry = ee.Geometry.Rectangle([43.83,24.7,63.58,39.88])
+   `var geometry = ee.Geometry.Rectangle([43.83,24.7,63.58,39.88])`
 
 3. GEE is composed of objects and methods.\
    Objects are data types e.g. raster images, numbers, strings\
@@ -23,10 +23,10 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
 4. To control what is seen on the Map below the code editor, call **Map** object:
    
    e.g. to centre the map on your variable **geometry** with zoom level 5:\
-       Map.centerObject(geometry, 5)
+   `Map.centerObject(geometry, 5)`
 
    e.g. to add a layer that you have created called *trueColor432* to your map with visualisation settings **trueColor432Vis**:\
-       Map.addLayer(trueColor432, trueColor432Vis, 'True Color (432)')
+   `Map.addLayer(trueColor432, trueColor432Vis, 'True Color (432)')`
 
 6. To create a function to apply to one or a collection of images, use **function**:
    
