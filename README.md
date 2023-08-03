@@ -7,7 +7,7 @@ To use the scripts:
 1. Sign up to GEE using your Google account (create a Google account if you do not have one): https://signup.earthengine.google.com/#!/
 2. Open the GEE code editor: https://code.earthengine.google.com/
 3. Simply copy and paste the GEE scripts into the central panel of the code editor, save, run
-4. For better understanding of GEE and JavaScript, read javascript_hints.md
+4. For better understanding of GEE and JavaScript, read javascript_gee_hints.md
 
 Codes compiled to support SENSE Summer Intern, 2023.
 
