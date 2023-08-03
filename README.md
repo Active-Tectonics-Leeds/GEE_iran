@@ -9,3 +9,6 @@ To use the scripts:
 3. Simply copy and paste the GEE scripts into the central panel of the code editor, save, run
 
 Codes compiled to support SENSE Summer Intern, 2023.
+
+![image](https://github.com/eejap/GEE_iran/assets/93524485/5d8a6ffe-67e9-4ab8-a8ea-f48f5b40d34d)
+
