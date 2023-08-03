@@ -32,7 +32,9 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    
    e.g. create a function addNDVI to calculate Normalised Vegetation Difference Index from image bands 4 and 5
 
+   ```
    function addNDVI(image) { \
        var ndvi = image.normalizedDifference(['B5', 'B4']); \
        return image.addBands(ndvi); \
    }
+   ```
