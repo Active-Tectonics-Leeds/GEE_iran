@@ -31,7 +31,8 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
 6. To create a function to apply to one or a collection of images, use *function*:
    
    e.g. create a function addNDVI to calculate Normalised Vegetation Difference Index from image bands 4 and 5
-   function addNDVI(image) {
-     var ndvi = image.normalizedDifference(['B5', 'B4']);
-     return image.addBands(ndvi);
+
+   function addNDVI(image) { \
+     var ndvi = image.normalizedDifference(['B5', 'B4']); \
+     return image.addBands(ndvi); \
    }
