@@ -18,3 +18,17 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    shows you the available objects (e.g. ee.Array)
    and what functions can be applied to them (e.g. ee.Array.argmax)
    ![image](https://github.com/eejap/GEE_iran/assets/93524485/f1e15bc1-1b2d-4457-98e6-d78dcc5902bd)
+
+3. To control what is seen on the Map below the code editor, call *Map* object:
+   e.g. to centre the map on your variable *geometry* with zoom level 5:
+   Map.centerObject(geometry, 5)
+
+   e.g. to add a layer that you have created called *trueColor432* to your map with visualisation settings *trueColor432Vis*:
+   Map.addLayer(trueColor432, trueColor432Vis, 'True Color (432)')
+
+4. To create a function to apply to one or a collection of images, use *function*:
+   e.g. create a function addNDVI to calculate Normalised Vegetation Difference Index from image bands 4 and 5
+   function addNDVI(image) {
+     var ndvi = image.normalizedDifference(['B5', 'B4']);
+     return image.addBands(ndvi);
+   }
