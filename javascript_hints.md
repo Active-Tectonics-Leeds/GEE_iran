@@ -17,4 +17,4 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    This panel on the left hand side of this website (https://developers.google.com/earth-engine/apidocs/ee-date-advance#examples)
    shows you the available objects (e.g. ee.Array)
    and what functions can be applied to them (e.g. ee.Array.argmax)
-   ![image](https://github.com/eejap/GEE_iran/assets/93524485/a49a471b-c127-462d-884d-c8d571432190)
+   ![image](https://github.com/eejap/GEE_iran/assets/93524485/f1e15bc1-1b2d-4457-98e6-d78dcc5902bd)
