@@ -18,7 +18,7 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    This panel on the left hand side of this website (https://developers.google.com/earth-engine/apidocs/ee-date-advance#examples)\
    shows you the available objects (e.g. `ee.Array`)\
    and what functions can be applied to them (e.g. `ee.Array.argmax`)\
-   ![image](https://github.com/eejap/GEE_iran/assets/93524485/f1e15bc1-1b2d-4457-98e6-d78dcc5902bd)
+   ![image](https://github.com/eejap/GEE_iran/assets/93524485/768d845a-5ce7-4ef1-b367-adf716c3f51b)
 
 4. To control what is seen on the Map below the code editor, call **Map** object:
    
@@ -38,3 +38,10 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
        return image.addBands(ndvi); \
    }
    ```
+
+7. GEE has loads of example codes and Tutorials on their pages. E.g. if you wanted to learn how best to use and plot Dynamic World \
+   land cover data, there is a three part tutorial: https://developers.google.com/earth-engine/tutorials/community/introduction-to-dynamic-world-pt-1
+
+   In the panel on the left hand side you can explore several other tutorials
+   ![image](https://github.com/eejap/GEE_iran/assets/93524485/f97e3d0c-34a3-42a0-a61c-b9c3124ffc3d)
+
