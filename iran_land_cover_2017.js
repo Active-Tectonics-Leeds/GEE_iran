@@ -1,3 +1,5 @@
+// Script to pull and visualise the Iran Land Cover map published by K.N. Toosi University of Technology LiDAR Lab
+
 var dataset = ee.Image('KNTU/LiDARLab/IranLandCover/V1');
 
 var visualization = {
