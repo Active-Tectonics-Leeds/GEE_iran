@@ -10,7 +10,6 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    e.g. to set a geometry that is a rectangle in lat lon coordinates that covers Iran\
    `var geometry = ee.Geometry.Rectangle([43.83,24.7,63.58,39.88])`
 ***
-
 2. GEE is composed of objects and methods.\
    Objects are data types e.g. raster images, numbers, strings\
    Each object belongs to a class.\
@@ -21,7 +20,6 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    and what functions can be applied to them (e.g. `ee.Array.argmax`)\
    ![image](https://github.com/eejap/GEE_iran/assets/93524485/768d845a-5ce7-4ef1-b367-adf716c3f51b)
 ***
-
 3. To control what is seen on the Map below the code editor, call **Map** object:
    
    e.g. to centre the map on your variable **geometry** with zoom level 5:\
