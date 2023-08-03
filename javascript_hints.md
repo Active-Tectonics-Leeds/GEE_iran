@@ -45,3 +45,10 @@ If you have never used JavaScript before, GEE code can look a bit alien. Here is
    In the panel on the left hand side you can explore several other tutorials
    ![image](https://github.com/eejap/GEE_iran/assets/93524485/f97e3d0c-34a3-42a0-a61c-b9c3124ffc3d)
 
+8. There are loads of datasets you would never think of available through GEE. Have a brows of the Earth Engine Data Catalog: \
+   https://developers.google.com/earth-engine/datasets/catalog \
+   e.g. search temperature and explore the very long list of associated datasets \
+
+   Each dataset comes with example JavaScript code, making it easy to edit the code to suit your needs: \
+   ![image](https://github.com/eejap/GEE_iran/assets/93524485/e28efe41-2127-4794-982b-d340e0f9abf4)
+
